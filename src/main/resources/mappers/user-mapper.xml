@@ -4,11 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.ncepu.yun.mapper.UserMapper">
-    <select id="selectUserByName" resultType="com.ncepu.yun.entity.User">
-      select * from ly_user where id = #{id}
-    </select>
-
     <select id="selectAllUser" resultType="com.ncepu.yun.entity.User">
-        select userName, accountName, description from ly_user;
+        select userName, accountName, description from `user`;
     </select>
 </mapper>
