@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private UserMapper userMapper;
 
-    @RequestMapping("hello/user")
+    @RequestMapping("users")
     public List<User> getAllUser() {
         List<User> users = userMapper.selectAllUser();
         return users;

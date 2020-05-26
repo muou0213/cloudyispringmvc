@@ -5,6 +5,6 @@
 </head>
 
 <body>
-<h2>${message}</h2>
+<h2>hello ${name}!</h2>
 </body>
 </html>
